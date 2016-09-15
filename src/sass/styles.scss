@@ -1,0 +1,123 @@
+$blue-grey-l5:   #eceff1;
+$blue-grey-l4:   #cfd8dc;
+$blue-grey-l3:   #b0bec5;
+$blue-grey:      #607d8b;
+$blue-grey-d2:   #455a64;
+$blue-grey-d4:   #263238;
+
+/* General */
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: $blue-grey-l4;
+}
+/* Header */
+.ontop {
+  z-index: 998;
+}
+.header-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  padding: 20px;
+  margin-bottom: 30px;
+  position: fixed;
+  z-index: 999;
+  background: white;
+
+  .header-search {
+    input {
+      font-size: 1.41em;
+    }
+  }
+  .btn-default {
+    background: $blue-grey-d2;
+    color: white;
+  }
+}
+.header-title {
+  text-transform: lowercase;
+  color: $blue-grey-d2;
+  margin-bottom: 30px;
+  margin-top: 120px;
+}
+
+/* Recipie Glance */
+.recipie-glance {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+  text-align: left;
+  color: $blue-grey-d4;
+  .img-half {
+    img {
+      height:12em;
+      width: 16em;
+    }
+  }
+  .btn-info {
+    background: $blue-grey-d2;
+  }
+  .edit-mode {
+    margin-left: 20px;
+  }
+}
+
+/* Modal */
+.modal {
+  .btn-default {
+    color: white;
+    background: $blue-grey-d2;
+  }
+  .modal-title {
+    height: 40px;
+  }
+  .form-control {
+    margin-bottom: 20px;
+  }
+}
+
+/* Edit Recipie Modal */
+.recipie-delete {
+  float: left;
+}
+
+/* Let's Cook Recipie Modal */
+#ViewRecipie {
+  .modal-header,
+  .modal-footer {
+    text-align: center;
+  }
+  
+  th {
+    text-align: center;
+  }
+  .modal-body {
+    h4 {
+      font-size: 16px;
+    }
+    select {
+      margin: 7px 7px;
+      margin-bottom: 9px;
+      color: black;
+    }
+    table, 
+    .notes {
+      text-align: left;
+    }
+  }
+  .checkbox {
+    border: 2px solid rgba(0,0,0,0.5);
+    height: 30px;
+    width: 30px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+input[type="checkbox"]{
+  width: 20px; 
+  height: 20px; 
+  cursor: pointer;
+}
